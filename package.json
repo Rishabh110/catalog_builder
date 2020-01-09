@@ -8,7 +8,7 @@
     "copy-assets": "ts-node tools/copyAssets",
     "lint": "tslint -c tslint.json -p tsconfig.json --fix",
     "tsc": "tsc",
-    "build": "npm-run-all clean lint tsc copy-assets --silent",
+    "build": "npm-run-all clean tsc copy-assets --silent",
     "start": "npm-run-all build dev",
     "dev": "node .",
     "docker": "docker volume create postgresVolume && docker-compose up --build"
@@ -33,6 +33,7 @@
     "csv-parser": "^2.3.2",
     "fast-csv": "^3.4.0",
     "line-reader": "^0.4.0",
-    "pg": "^7.14.0"
+    "pg": "^7.14.0",
+    "stream-replace": "^1.0.0"
   }
 }
